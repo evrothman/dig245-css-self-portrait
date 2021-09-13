@@ -1,9 +1,12 @@
 
 /* css */
+*{
+  box-sizing:border-box;
+}
 h1{
   color:red;
 }
-.forky {
+.self-portrait{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12,10 +15,102 @@ h1{
 .face {
   width: 300px;
   height: 300px;
-  background: #f0f0f0;
+  background: rgb(228,195,152);
   position: absolute;
-  border-radius: 65% 30% 65% 28%;
+  border-radius: 60% 40% 60% 35%;
   transform: rotate(-45deg);
   top: -135px;
   left: -147px;
+  z-index:2;
+}
+.forehead{
+  position:absolute;
+  width: 190px;
+  height: 100px;
+  background:rgb(228,195,152);
+  top: -130px;
+  left:-95px;
+  border-radius: 40% 40% 90% 90%;
+  z-index:3;
+}
+.hair1{
+  position:absolute;
+  width:280px;
+  height:50px;
+  background:rgb(51,35,20);
+  top:-180px;
+  left:-137.5px;
+  z-index:3;
+  border-radius: 50% 50% 0% 0%;
+}
+.hair2{
+  position:absolute;
+  width:280px;
+  height: 120px;
+  background: rgb(51,35,20);
+  z-index:1;
+  top:-130px;
+  left:-137.5px;
+  border-radius: 0% 0% 10% 10%;
+}
+.left-eye{
+  position:absolute;
+  width:35px;
+  height:35px;
+  background:rgb(0,64,128);
+  border-radius:50%;
+  border-width:5px;
+  border: solid 10px white;
+  top: -40px;
+  left:-75px;
+  z-index:4;
+}
+.right-eye{
+  position:absolute;
+  width:35px;
+  height:35px;
+  background:rgb(0,64,128);
+  border-radius:50%;
+  border-width:5px;
+  border: solid 10px white;
+  top: -40px;
+  left: 45px;
+  z-index:4;
+}
+.left-glass,.right-glass{
+    position:absolute;
+    width:100px;
+    height:75px;
+    background:rgb(228,195,152);
+    border:solid 10px rgb(65,50,30);
+    z-index:3;
+    border-radius:0% 0% 30% 30%;
+}
+.left-glass{
+  top: -60px;
+  left: -110px;
+}
+.right-glass{
+  top: -60px;
+  left: 15px;
+}
+.middle-glass{
+  position:absolute;
+  width:25px;
+  height:17px;
+  background:rgb(65,50,30);
+  top:-60px;
+  left:-10px;
+  z-index:4;
+}
+.smile{
+  position:absolute;
+  width:130px;
+  height:50px;
+  background:rgb(248,240,240);
+  border: solid 14px rgb(234,147,131);
+  z-index:4;
+  border-radius: 30% 30% 50% 50%;
+  top: 65px;
+  left:-60px;
 }
